@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon"  type="image/png" sizes="32x32" href="favicon.png">
+        <link rel="stylesheet" href="style.css">
+        <title>Age Calculator</title>
+    </head>
+    <body>
+        <div class="card">
+            <div class="banner">
+              <p>Age Calculator</p>
+            </div>
+            <div class="wrapper1">
+                <div class="item">
+                    <label>date</label>
+                    <input type="number" placeholder="DD" id="inpDate">
+                    <p class="log"></p>
+                </div>
+                <div class="item">
+                    <label>month</label>
+                    <input type="number" placeholder="MM" id="inpMonth">
+                    <p class="log"></p>
+                </div>
+                <div class="item">
+                    <label>year</label>
+                    <input type="number" placeholder="YYYY" id="inpYear">
+                    <p class="log"></p>
+                </div>
+            </div>
+            <div class="button" onclick="age()">
+                <img src="arrow-down-svgrepo-com.svg" alt="arrow-down">
+            </div>
+            <div class="wrapper2">
+                <p><span id="resDate">--</span> days</p>
+                <p><span id="resMonth">--</span> months</p>
+                <p><span id="resYear">--</span> years</p>
+            </div>
+        </div>         
+        <p id="footer">Designed by <span>Mr. Ryt</span></p>
+        <script src="script.js"></script>
+    </body>
+</html>
