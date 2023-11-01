@@ -106,7 +106,7 @@ input {
   background-color: transparent;
   border: none;
   border-bottom: solid 1px black; 
-  font-family: junge, Recursive, sans-serif;
+  font-family: Junge, Recursive, sans-serif;
   font-size: 1.2rem;
   transition: all 120ms ease-out;
 }
@@ -167,7 +167,7 @@ p span {
 #footer {
   margin-block: 0;
   margin-inline: auto;
-  font-family: recursive, monospace;
+  font-family: Recursive, monospace;
   font-size: 10px;
   -webkit-user-select: none;
   user-select: none;
