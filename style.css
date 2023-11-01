@@ -125,7 +125,6 @@ input:focus {
 }
 
 .button {
-  background-color: var(--primary);
   border: solid 1px transparent;
   border-radius: 0px;
   position: relative;
@@ -134,6 +133,7 @@ input:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: var(--primary);
   cursor: pointer;
   -webkit-user-select: none;
   user-select: none;
