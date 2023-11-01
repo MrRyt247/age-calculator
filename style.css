@@ -56,6 +56,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: Junge, Recursive, sans-serif;
+  font-weight: bolder;
   font-variant: small-caps;
   font-size: 1.25rem;
   text-shadow: var(--textShadow);
@@ -84,6 +86,7 @@ body {
 .item {
   width: 70px;
   height: 50px;
+  font-family: Junge, sans-serif;
 }
 
 label {
@@ -96,13 +99,14 @@ label {
 }
 
 input {
-  width: min(55px, 100% - .2rem);
+  width: min(55px, 100% - .1rem);
   height: 24px; 
   color: black;
   outline: transparent;
   background-color: transparent;
   border: none;
   border-bottom: solid 1px black; 
+  font-family: junge, Recursive, sans-serif;
   font-size: 1.2rem;
   transition: all 120ms ease-out;
 }
@@ -117,9 +121,11 @@ input:focus {
 
 .log {
   color: var(--logError);
-  font-family: monospace;
+  font-family: Recursive, monospace;
   font-size: 11px;
   font-weight: 400;
+  position: relative;
+  top: 2px;
   -webkit-user-select: none;
   user-select: none;
 }
@@ -147,6 +153,7 @@ input:focus {
   display: block;
   flex-direction: column;
   justify-content: end;
+  font-family: Junge, sans-serif;
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
@@ -154,12 +161,13 @@ input:focus {
 
 p span {
   color: var(--primary);
+  letter-spacing: 2px;
 }
 
 #footer {
   margin-block: 0;
   margin-inline: auto;
-  font-family: monospace;
+  font-family: recursive, monospace;
   font-size: 10px;
   -webkit-user-select: none;
   user-select: none;
