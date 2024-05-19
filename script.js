@@ -27,12 +27,14 @@ function age() {
     }, 1005);
   };
 
-  button.addEventListener('click', () => {
-    card.style.boxShadow = "var(--cardShadow), var(--glowShadow)";
+  function glow(target) {
+    target.style.boxShadow = "var(--cardShadow), var(--glowShadow)";
     setTimeout(() => {
-      card.style.boxShadow = "var(--cardShadow)";
+      target.style.boxShadow = "var(--cardShadow)";
     }, 800);
-  });
+  };
+
+  button.addEventListener('click', glow(card));
 
   function handleAnswer(result, log, ans) {
     result.innerText = ans;
@@ -88,3 +90,10 @@ function age() {
     resYear.innerText = "--";
   }
 };
+
+window.addEventListener("keypress", (e) => {
+  if(e.key === 'Enter') {
+    age();
+    glow(card);
+  };
+})
